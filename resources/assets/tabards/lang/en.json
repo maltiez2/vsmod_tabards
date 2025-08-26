@@ -1,0 +1,9 @@
+{
+  "game:tabname-tabards": "Tabards",
+  "game:tabname-tabards-colors": "Tabards (Colored)",
+
+  "item-tabard-*-overarmor": "Tabard",
+  "item-tabard-*-glowing": "Glowing tabard",
+
+  "itemdesc-tabard-*-glowing": "Powdered temporal gear makes a gloing mark on fron and back of the tabard, it is visible in the dark and produces small amount of light."
+}

@@ -1,0 +1,1 @@
+﻿[{"side": "Server", "dependsOn": [{"modid": "overhaullib"}], "file": "tabards:itemtypes/tabard", "op": "replace", "path": "/attributes/clothescategory", "value": "miscgear"}]

@@ -1,0 +1,47 @@
+[
+	{
+		"enabled": true,
+		"ingredientPattern": "ASB,_R_",
+		"recipeGroup": 1,
+		"ingredients": {
+			"A": {"type": "item", "code": "game:cloth-plain"},
+			"B": {"type": "item", "code": "game:cloth-plain"},
+			"S": {"type": "item", "code": "game:sewingkit"},
+			"R": {"type": "item", "code": "game:rope"}
+		},
+		"width": 3,
+		"height": 2,
+		"name": "tabard",
+		"output": { "type": "item", "code": "tabard-miscgear-plain-overarmor"}
+	},
+	{
+		"enabled": true,
+		"ingredientPattern": "ASB,_R_",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {"type": "item", "code": "game:cloth-{color1}"},
+			"B": {"type": "item", "code": "game:cloth-{color2}"},
+			"S": {"type": "item", "code": "game:sewingkit"},
+			"R": {"type": "item", "code": "game:rope"}
+		},
+		"width": 3,
+		"height": 2,
+		"name": "tabard",
+		"output": { "type": "item", "code": "tabard-miscgear-plain-overarmor", "attributes": {"types": {"belt": "plain", "first": "{color1}", "second": "{color2}"}}}
+	},
+	{
+		"enabled": true,
+		"ingredientPattern": "RGF",
+		"recipeGroup": 2,
+		"ingredients": {
+			"R": {"type": "item", "code": "tabard-miscgear-plain-overarmor"},
+			"G": {"type": "item", "code": "game:gear-temporal"},
+			"F": { "type": "item", "code": "game:hammer-*", "isTool": true, "toolDurabilityCost": 10 }
+		},
+		"width": 3,
+		"height": 1,
+		"copyAttributesFrom": "R",
+		"name": "tabard",
+		"output": { "type": "item", "code": "tabard-miscgear-plain-glowing"}
+	}
+]
