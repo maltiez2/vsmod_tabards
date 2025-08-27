@@ -1,0 +1,62 @@
+[
+  {
+		"enabled": false,
+		"ingredientPattern": "ASB,_R_",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {"type": "item", "code": "tailorsdelight:cloth-{color1}"},
+			"B": {"type": "item", "code": "game:cloth-{color2}"},
+			"S": {"type": "item", "code": "game:sewingkit"},
+			"R": {"type": "item", "code": "game:rope"}
+		},
+		"allowedVariants": 
+		{
+			"color1": ["darkblue", "darkred", "darkgreen", "darkbrown"],
+			"color2": ["black", "blue", "brown", "gray", "green", "orange", "pink", "plain", "purple", "red", "white", "yellow"]
+		},
+		"width": 3,
+		"height": 2,
+		"name": "tabard",
+		"output": { "type": "item", "code": "tabard-miscgear-plain-overarmor", "attributes": {"types": {"belt": "plain", "first": "{color1}", "second": "{color2}"}}}
+	},
+	{
+		"enabled": false,
+		"ingredientPattern": "ASB,_R_",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {"type": "item", "code": "game:cloth-{color1}"},
+			"B": {"type": "item", "code": "tailorsdelight:cloth-{color2}"},
+			"S": {"type": "item", "code": "game:sewingkit"},
+			"R": {"type": "item", "code": "game:rope"}
+		},
+		"allowedVariants": 
+		{
+			"color1": ["black", "blue", "brown", "gray", "green", "orange", "pink", "plain", "purple", "red", "white", "yellow"],
+			"color2": ["darkblue", "darkred", "darkgreen", "darkbrown"]
+		},
+		"width": 3,
+		"height": 2,
+		"name": "tabard",
+		"output": { "type": "item", "code": "tabard-miscgear-plain-overarmor", "attributes": {"types": {"belt": "plain", "first": "{color1}", "second": "{color2}"}}}
+	},
+	{
+		"enabled": false,
+		"ingredientPattern": "ASB,_R_",
+		"recipeGroup": 2,
+		"ingredients": {
+			"A": {"type": "item", "code": "tailorsdelight:cloth-{color1}"},
+			"B": {"type": "item", "code": "tailorsdelight:cloth-{color2}"},
+			"S": {"type": "item", "code": "game:sewingkit"},
+			"R": {"type": "item", "code": "game:rope"}
+		},
+		"allowedVariants": 
+		{
+			"color1": ["darkblue", "darkred", "darkgreen", "darkbrown"],
+			"color2": ["darkblue", "darkred", "darkgreen", "darkbrown"]
+		},
+		"width": 3,
+		"height": 2,
+		"name": "tabard",
+		"output": { "type": "item", "code": "tabard-miscgear-plain-overarmor", "attributes": {"types": {"belt": "plain", "first": "{color1}", "second": "{color2}"}}}
+	}
+]

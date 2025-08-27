@@ -11,17 +11,13 @@
       "properties": {
         "addOverlayPrefix": true,
         "textures": {
-          "belt-*::first-*::second-*": {
-            "tabard-belt": {"base": "game:block/cloth/linen/{belt}"},
-            "tabard-first": {"base": "game:block/cloth/linen/{first}"},
-            "tabard-second": {"base": "game:block/cloth/linen/{second}"}
-          }
+          "belt-*::first-*::second-*": {"tabard-belt": {"base": "game:block/cloth/linen/{belt}"}, "tabard-first": {"base": "game:block/cloth/linen/{first}"}, "tabard-second": {"base": "game:block/cloth/linen/{second}"}}
         }
       }
     }
   ],
   "attributes": {"wearableAttachment": true, "clothescategory": "shoulder", "warmthByType": {"*": 0}, "handbook": {"groupBy": ["tabard-{category}-{subtype}-{type}"]}},
-  "lightHsvByType": {"*-glowing": [32, 5, 1], "*": [32, 5, 0]},
+  "lightHsvByType": {"*-glowing": [32, 0, 1], "*": [32, 0, 0]},
   "creativeinventory": {"general": ["*"], "tabards": ["*"]},
   "creativeinventoryStacks": [
     {

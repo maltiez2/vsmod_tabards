@@ -24,6 +24,11 @@
 			"S": {"type": "item", "code": "game:sewingkit"},
 			"R": {"type": "item", "code": "game:rope"}
 		},
+		"allowedVariants": 
+		{
+			"color1": ["black", "blue", "brown", "gray", "green", "orange", "pink", "plain", "purple", "red", "white", "yellow"],
+			"color2": ["black", "blue", "brown", "gray", "green", "orange", "pink", "plain", "purple", "red", "white", "yellow"]
+		},
 		"width": 3,
 		"height": 2,
 		"name": "tabard",
