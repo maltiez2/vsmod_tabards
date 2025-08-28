@@ -3,7 +3,7 @@
   <PropertyGroup>
     <ModName>Tabards</ModName>
     <ModType>code</ModType>
-    <ModVersion>0.2.0</ModVersion>
+    <ModVersion>0.2.1</ModVersion>
     <ModId>tabards</ModId>
     <Description></Description>
     <Side>universal</Side>

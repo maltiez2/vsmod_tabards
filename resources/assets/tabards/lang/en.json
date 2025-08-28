@@ -5,10 +5,14 @@
   "item-tabard-*-overarmor": "Tabard",
   "item-tabard-*-glowing": "Glowing tabard",
   "item-token-gold": "Infinite tabard emblem token",
-  "item-token-silver": "Single-use tabard emblem token",
+  "item-token-silver": "Multi-use tabard emblem token",
+  "item-token-cpper": "Single-use tabard emblem token",
+  "item-token-*": "Tabard emblem token",
 
   "itemdesc-tabard-*-glowing": "Powdered temporal gear makes a gloing mark on fron and back of the tabard, it is visible in the dark and produces small amount of light.",
-  "itemdesc-token-*": "Sneak click to apply on your tabard, right click on player to apply on their tabard.<br/>Does not consume items from grid when crafted.",
+  "itemdesc-token-gold": "Sneak click to apply on your tabard, right click on player to apply on their tabard.<br/>Does not consume items from grid when crafted.",
+  "itemdesc-token-silver": "Sneak click to apply on your tabard, right click on player to apply on their tabard.<br/>Does not consume items from grid when crafted.",
+  "itemdesc-token-copper": "Sneak click to apply on your tabard.<br/>Does not consume items from grid when crafted.",
 
   "emblem-blackguard": "Blackguard",
   "emblem-forlorn": "Forlorn"

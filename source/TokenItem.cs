@@ -1,11 +1,10 @@
 ﻿using AttributeRenderingLibrary;
 using Newtonsoft.Json.Linq;
-using System.Diagnostics;
+using System.Reflection;
 using Vintagestory.API.Common;
 using Vintagestory.API.Config;
 using Vintagestory.API.Datastructures;
 using Vintagestory.API.Util;
-using Xceed.Wpf.Toolkit.PropertyGrid.Attributes;
 
 namespace Tabards;
 
@@ -22,16 +21,32 @@ public class TokenBehavior : CollectibleBehavior
         AddAllTypesToCreativeInventory(api);
     }
 
+    public override void Initialize(JsonObject properties)
+    {
+        base.Initialize(properties);
+
+        _canApplyToOthers = properties["canApplyToOthers"].AsBool(false);
+        _targetWildcard = properties["targetWildcard"].AsString("*");
+        _skipVariants = properties["skipVariants"].AsObject<string[]>([]);
+    }
+
     public override void OnHeldInteractStart(ItemSlot slot, EntityAgent byEntity, BlockSelection blockSel, EntitySelection entitySel, bool firstEvent, ref EnumHandHandling handHandling, ref EnumHandling handling)
     {
+        EntityPlayer? target = null;
         EntityPlayer? player = byEntity as EntityPlayer;
-        EntityPlayer? target = player?.EntitySelection?.Entity as EntityPlayer;
-        if (player?.Controls.Sneak == true)
+        EntityPlayer? selection = player?.EntitySelection?.Entity as EntityPlayer;
+        
+        if (player?.Controls.Sneak == false &&_canApplyToOthers)
+        {
+            target = selection;
+        }
+        else
         {
             target = player;
         }
+        
         IInventory? inventory = target?.Player?.InventoryManager.GetOwnInventory(GlobalConstants.characterInvClassName);
-        ItemSlot? tabardSlot = inventory?.FirstOrDefault(slot => WildcardUtil.Match("tabard-*", slot?.Itemstack?.Collectible?.Code?.Path ?? ""), null);
+        ItemSlot? tabardSlot = inventory?.FirstOrDefault(slot => WildcardUtil.Match(_targetWildcard, slot?.Itemstack?.Collectible?.Code?.ToString() ?? ""), null);
 
         if (tabardSlot == null)
         {
@@ -42,23 +57,33 @@ public class TokenBehavior : CollectibleBehavior
         Variants tokenVariants = Variants.FromStack(slot.Itemstack);
         Variants tabardVariants = Variants.FromStack(tabardSlot.Itemstack);
 
-        string? emblem = tokenVariants.Get("emblem");
-        string? tabardEmblem = tabardVariants.Get("emblem");
+        Dictionary<string, string>? elements = (Dictionary<string, string>?)_variants_Elements?.GetValue(tokenVariants);
 
-        if (emblem == tabardEmblem)
+        if (elements == null) return;
+
+        foreach ((string variantCode, _) in elements)
         {
-            handling = EnumHandling.PassThrough;
-            return;
+            if (_skipVariants.Contains(variantCode)) continue;
+
+            string? emblem = tokenVariants.Get(variantCode);
+            string? tabardEmblem = tabardVariants.Get(variantCode);
+
+            if (emblem == tabardEmblem)
+            {
+                handling = EnumHandling.PassThrough;
+                return;
+            }
+
+            if (emblem == null)
+            {
+                tabardVariants.RemoveKeys(variantCode);
+            }
+            else
+            {
+                tabardVariants.Set(variantCode, emblem);
+            }
         }
 
-        if (emblem == null)
-        {
-            tabardVariants.RemoveKeys("emblem");
-        }
-        else
-        {
-            tabardVariants.Set("emblem", emblem);
-        }
         tabardVariants.ToStack(tabardSlot.Itemstack);
 
         if (slot.Itemstack.Item.GetMaxDurability(slot.Itemstack) > 0)
@@ -72,10 +97,15 @@ public class TokenBehavior : CollectibleBehavior
         handHandling = EnumHandHandling.Handled;
     }
 
+    private static readonly PropertyInfo? _variants_Elements = typeof(Variants).GetProperty("Elements", BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.Instance);
+    private bool _canApplyToOthers = false;
+    private string _targetWildcard = "*";
+    private string[] _skipVariants = [];
+
     private void AddAllTypesToCreativeInventory(ICoreAPI api)
     {
         if (api.Side == EnumAppSide.Client) return;
-        
+
         IEnumerable<string> emblems = api.Assets.GetLocations("textures/emblems", "tabards").Select(asset => asset.Path.Split('/').Last().Split('.').First());
 
         List<JsonItemStack> stacks = [];
