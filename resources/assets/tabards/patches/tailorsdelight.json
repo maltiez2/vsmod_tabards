@@ -13,6 +13,96 @@
     "op": "addMerge",
     "path": "/behaviors/0/properties/textures",
     "value": {
+      "belt-*::first-dark*::second-dark*::firstcheckered-*::secondcheckered-*::emblem-*": {
+        "tabard-belt": {"base": "game:block/cloth/linen/{belt}"},
+        "tabard-first": {"base": "tailorsdelight:block/cloth/dark/{first}", "blendedOverlays": [{"base": "tailorsdelight:overlays/checker_2x2", "blendMode": "Overlay"}]},
+        "tabard-second": {"base": "tailorsdelight:block/cloth/dark/{second}", "blendedOverlays": [{"base": "tailorsdelight:overlays/checker_2x2", "blendMode": "Overlay"}]},
+        "tabard-emblem": {"base": "tabards:emblems/{emblem}"}
+      },
+      "belt-*::first-*::second-dark*::firstcheckered-*::secondcheckered-*::emblem-*": {
+        "tabard-belt": {"base": "game:block/cloth/linen/{belt}"},
+        "tabard-first": {"base": "game:block/cloth/linen/{first}", "blendedOverlays": [{"base": "tailorsdelight:overlays/checker_2x2", "blendMode": "Overlay"}]},
+        "tabard-second": {"base": "tailorsdelight:block/cloth/dark/{second}", "blendedOverlays": [{"base": "tailorsdelight:overlays/checker_2x2", "blendMode": "Overlay"}]},
+        "tabard-emblem": {"base": "tabards:emblems/{emblem}"}
+      },
+      "belt-*::first-dark*::second-*::firstcheckered-*::secondcheckered-*::emblem-*": {
+        "tabard-belt": {"base": "game:block/cloth/linen/{belt}"},
+        "tabard-first": {"base": "tailorsdelight:block/cloth/dark/{first}", "blendedOverlays": [{"base": "tailorsdelight:overlays/checker_2x2", "blendMode": "Overlay"}]},
+        "tabard-second": {"base": "game:block/cloth/linen/{second}", "blendedOverlays": [{"base": "tailorsdelight:overlays/checker_2x2", "blendMode": "Overlay"}]},
+        "tabard-emblem": {"base": "tabards:emblems/{emblem}"}
+      },
+      "belt-*::first-dark*::second-dark*::firstcheckered-*::emblem-*": {
+        "tabard-belt": {"base": "game:block/cloth/linen/{belt}"},
+        "tabard-first": {"base": "tailorsdelight:block/cloth/dark/{first}", "blendedOverlays": [{"base": "tailorsdelight:overlays/checker_2x2", "blendMode": "Overlay"}]},
+        "tabard-second": {"base": "tailorsdelight:block/cloth/dark/{second}"},
+        "tabard-emblem": {"base": "tabards:emblems/{emblem}"}
+      },
+      "belt-*::first-*::second-dark*::firstcheckered-*::emblem-*": {
+        "tabard-belt": {"base": "game:block/cloth/linen/{belt}"},
+        "tabard-first": {"base": "game:block/cloth/linen/{first}", "blendedOverlays": [{"base": "tailorsdelight:overlays/checker_2x2", "blendMode": "Overlay"}]},
+        "tabard-second": {"base": "tailorsdelight:block/cloth/dark/{second}"},
+        "tabard-emblem": {"base": "tabards:emblems/{emblem}"}
+      },
+      "belt-*::first-dark*::second-*::firstcheckered-*::emblem-*": {
+        "tabard-belt": {"base": "game:block/cloth/linen/{belt}"},
+        "tabard-first": {"base": "tailorsdelight:block/cloth/dark/{first}", "blendedOverlays": [{"base": "tailorsdelight:overlays/checker_2x2", "blendMode": "Overlay"}]},
+        "tabard-second": {"base": "game:block/cloth/linen/{second}"},
+        "tabard-emblem": {"base": "tabards:emblems/{emblem}"}
+      },
+      "belt-*::first-dark*::second-dark*::secondcheckered-*::emblem-*": {
+        "tabard-belt": {"base": "game:block/cloth/linen/{belt}"},
+        "tabard-first": {"base": "tailorsdelight:block/cloth/dark/{first}"},
+        "tabard-second": {"base": "tailorsdelight:block/cloth/dark/{second}", "blendedOverlays": [{"base": "tailorsdelight:overlays/checker_2x2", "blendMode": "Overlay"}]},
+        "tabard-emblem": {"base": "tabards:emblems/{emblem}"}
+      },
+      "belt-*::first-*::second-dark*::secondcheckered-*::emblem-*": {
+        "tabard-belt": {"base": "game:block/cloth/linen/{belt}"},
+        "tabard-first": {"base": "game:block/cloth/linen/{first}"},
+        "tabard-second": {"base": "tailorsdelight:block/cloth/dark/{second}", "blendedOverlays": [{"base": "tailorsdelight:overlays/checker_2x2", "blendMode": "Overlay"}]},
+        "tabard-emblem": {"base": "tabards:emblems/{emblem}"}
+      },
+      "belt-*::first-dark*::second-*::secondcheckered-*::emblem-*": {
+        "tabard-belt": {"base": "game:block/cloth/linen/{belt}"},
+        "tabard-first": {"base": "tailorsdelight:block/cloth/dark/{first}"},
+        "tabard-second": {"base": "game:block/cloth/linen/{second}", "blendedOverlays": [{"base": "tailorsdelight:overlays/checker_2x2", "blendMode": "Overlay"}]},
+        "tabard-emblem": {"base": "tabards:emblems/{emblem}"}
+      },
+      "belt-*::first-*::second-*::firstcheckered-*::secondcheckered-*::emblem-*": {
+        "tabard-belt": {"base": "game:block/cloth/linen/{belt}"},
+        "tabard-first": {"base": "game:block/cloth/linen/{first}", "blendedOverlays": [{"base": "tailorsdelight:overlays/checker_2x2", "blendMode": "Overlay"}]},
+        "tabard-second": {"base": "game:block/cloth/linen/{second}", "blendedOverlays": [{"base": "tailorsdelight:overlays/checker_2x2", "blendMode": "Overlay"}]},
+        "tabard-emblem": {"base": "tabards:emblems/{emblem}"}
+      },
+      "belt-*::first-*::second-*::firstcheckered-*::emblem-*": {
+        "tabard-belt": {"base": "game:block/cloth/linen/{belt}"},
+        "tabard-first": {"base": "game:block/cloth/linen/{first}", "blendedOverlays": [{"base": "tailorsdelight:overlays/checker_2x2", "blendMode": "Overlay"}]},
+        "tabard-second": {"base": "game:block/cloth/linen/{second}"},
+        "tabard-emblem": {"base": "tabards:emblems/{emblem}"}
+      },
+      "belt-*::first-*::second-*::secondcheckered-*::emblem-*": {
+        "tabard-belt": {"base": "game:block/cloth/linen/{belt}"},
+        "tabard-first": {"base": "game:block/cloth/linen/{first}"},
+        "tabard-second": {"base": "game:block/cloth/linen/{second}", "blendedOverlays": [{"base": "tailorsdelight:overlays/checker_2x2", "blendMode": "Overlay"}]},
+        "tabard-emblem": {"base": "tabards:emblems/{emblem}"}
+      },
+      "belt-*::first-dark*::second-dark*::emblem-*": {
+        "tabard-belt": {"base": "game:block/cloth/linen/{belt}"},
+        "tabard-first": {"base": "tailorsdelight:block/cloth/dark/{first}"},
+        "tabard-second": {"base": "tailorsdelight:block/cloth/dark/{second}"},
+        "tabard-emblem": {"base": "tabards:emblems/{emblem}"}
+      },
+      "belt-*::first-*::second-dark*::emblem-*": {
+        "tabard-belt": {"base": "game:block/cloth/linen/{belt}"},
+        "tabard-first": {"base": "game:block/cloth/linen/{first}"},
+        "tabard-second": {"base": "tailorsdelight:block/cloth/dark/{second}"},
+        "tabard-emblem": {"base": "tabards:emblems/{emblem}"}
+      },
+      "belt-*::first-dark*::second-*::emblem-*": {
+        "tabard-belt": {"base": "game:block/cloth/linen/{belt}"},
+        "tabard-first": {"base": "tailorsdelight:block/cloth/dark/{first}"},
+        "tabard-second": {"base": "game:block/cloth/linen/{second}"},
+        "tabard-emblem": {"base": "tabards:emblems/{emblem}"}
+      },
       "belt-*::first-dark*::second-dark*::firstcheckered-*::secondcheckered-*": {
         "tabard-belt": {"base": "game:block/cloth/linen/{belt}"},
         "tabard-first": {"base": "tailorsdelight:block/cloth/dark/{first}", "blendedOverlays": [{"base": "tailorsdelight:overlays/checker_2x2", "blendMode": "Overlay"}]},

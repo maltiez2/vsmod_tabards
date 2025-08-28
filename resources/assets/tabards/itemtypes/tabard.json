@@ -11,6 +11,12 @@
       "properties": {
         "addOverlayPrefix": true,
         "textures": {
+          "belt-*::first-*::second-*::emblem-*": {
+            "tabard-belt": {"base": "game:block/cloth/linen/{belt}"},
+            "tabard-first": {"base": "game:block/cloth/linen/{first}"},
+            "tabard-second": {"base": "game:block/cloth/linen/{second}"},
+            "tabard-emblem": {"base": "tabards:emblems/{emblem}"}
+          },
           "belt-*::first-*::second-*": {"tabard-belt": {"base": "game:block/cloth/linen/{belt}"}, "tabard-first": {"base": "game:block/cloth/linen/{first}"}, "tabard-second": {"base": "game:block/cloth/linen/{second}"}}
         }
       }
