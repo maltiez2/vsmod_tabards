@@ -1,0 +1,17 @@
+{
+  "emblem-blackguard": "Garde Noir",
+  "emblem-forlorn": "Enfants Perdus",
+  "game:tabname-tabards": "Tabards",
+  "game:tabname-tabards-colors": "Tabards (Couleurs",
+  "item-tabard-*-glowing": "Tabard luminescent",
+  "item-tabard-*-overarmor": "Tabard",
+  "item-token-*": "Jeton d'emblème de tabard",
+  "item-token-cpper": "Jeton d'emblème de tabard à usage unique",
+  "item-token-gold": "Jeton d'emblème de tabard infini",
+  "item-token-silver": "Jeton d'emblème de tabard multi-usage",
+  "itemdesc-tabard-*-glowing": "Powdered temporal gear makes a glowing mark on fron and back of the tabard, it is visible in the dark and produces small amount of light.",
+  "itemdesc-tabard-*-glowing": "Un engrenage temporel en poudre permet de faire une marque luminescente sur le devant et l'arrière du tabard. Elle est visible dans le noir et produit un peu de lumière.",
+  "itemdesc-token-copper": "Cliquez en étant accroupi pour l'appliquer à votre tabard<br/>Ne consomme pas les objets de la grille quand il est fabriqué.",
+  "itemdesc-token-gold": "Cliquez en étant accroupi pour l'appliquer à votre tabard, clic droit sur un joueur pour l'appliquer à leur tabard.<br/>Ne consomme pas les objets de la grille quand il est fabriqué.",
+  "itemdesc-token-silver": "Cliquez en étant accroupi pour l'appliquer à votre tabard, clic droit sur un joueur pour l'appliquer à leur tabard.<br/>Ne consomme pas les objets de la grille quand il est fabriqué."
+}
