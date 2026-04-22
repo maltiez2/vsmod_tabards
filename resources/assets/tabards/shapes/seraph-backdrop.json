@@ -1,0 +1,201 @@
+{
+	"editor": {},
+	"textureWidth": 32,
+	"textureHeight": 32,
+	"textureSizes": {
+	},
+	"textures": {
+	},
+	"elements": [
+		{
+			"name": "LowerTorso",
+			"from": [ 0.0, 0.0, 0.0 ],
+			"to": [ 5.0, 5.0, 6.0 ],
+			"rotationOrigin": [ 8.0, 15.0, 8.0 ],
+			"rotationZ": 3.0,
+			"faces": {
+			},
+			"children": [
+				{
+					"name": "UpperTorso",
+					"from": [ 0.0, 4.3, -0.1 ],
+					"to": [ 5.0, 9.3, 6.1 ],
+					"rotationOrigin": [ 2.0, 5.0, 3.0 ],
+					"rotationZ": -6.0,
+					"faces": {
+					},
+					"children": [
+						{
+							"name": "UpperArmR",
+							"from": [ 1.0, -2.1, -1.2 ],
+							"to": [ 4.0, 4.9, 0.8 ],
+							"rotationOrigin": [ 2.0, 4.7, 0.8 ],
+							"rotationX": 10.0,
+							"rotationZ": 7.0,
+							"faces": {
+							},
+							"children": [
+								{
+									"name": "LowerArmR",
+									"from": [ 0.1, -7.3, 0.1 ],
+									"to": [ 2.6, 0.7, 2.1 ],
+									"rotationOrigin": [ 1.3, 0.7, 1.1 ],
+									"rotationX": -8.0,
+									"rotationZ": -6.0,
+									"faces": {
+									},
+									"children": [
+										{
+											"name": "ItemAnchor",
+											"from": [ 1.5, 0.5, 1.0 ],
+											"to": [ 2.5, 1.5, 2.0 ],
+											"rotationOrigin": [ 1.0, 1.0, 1.0 ],
+											"faces": {
+											}
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "UpperArmL",
+							"from": [ 1.0, -2.1, 5.4 ],
+							"to": [ 4.0, 4.9, 7.4 ],
+							"rotationOrigin": [ 2.0, 4.7, 5.2 ],
+							"rotationX": -10.0,
+							"rotationZ": 7.0,
+							"faces": {
+							},
+							"children": [
+								{
+									"name": "LowerArmL",
+									"from": [ 0.2, -7.3, -0.1 ],
+									"to": [ 2.7, 0.7, 1.9 ],
+									"rotationOrigin": [ 1.4, 0.7, 0.9 ],
+									"rotationX": 8.0,
+									"rotationZ": -6.0,
+									"faces": {
+									},
+									"children": [
+										{
+											"name": "ItemAnchorL",
+											"from": [ 1.5, 0.5, 1.0 ],
+											"to": [ 2.5, 1.5, 2.0 ],
+											"rotationOrigin": [ 1.0, 1.0, 1.0 ],
+											"faces": {
+											}
+										}
+									]
+								},
+								{
+									"name": "ShoulderAttachment",
+									"from": [ 3.0, 7.0, 2.0 ],
+									"to": [ 3.0, 7.0, 2.0 ],
+									"rotationOrigin": [ 3.0, 7.0, 2.0 ],
+									"faces": {
+									}
+								}
+							]
+						},
+						{
+							"name": "Neck",
+							"from": [ 1.5, 3.9, 1.6 ],
+							"to": [ 4.5, 7.9, 4.6 ],
+							"rotationOrigin": [ 3.2, 3.6, 3.1 ],
+							"rotationZ": 12.0,
+							"faces": {
+							},
+							"children": [
+								{
+									"name": "Head",
+									"from": [ -1.7, 2.1, -1.0 ],
+									"to": [ 3.8, 7.1, 4.0 ],
+									"rotationOrigin": [ 1.7, 2.1, 1.5 ],
+									"rotationZ": -7.0,
+									"faces": {
+									}
+								}
+							]
+						},
+						{
+							"name": "UpperBackAttachment",
+							"from": [ 5.5, 2.0, 3.0 ],
+							"to": [ 5.5, 2.0, 3.0 ],
+							"rotationOrigin": [ 5.5, 2.0, 3.0 ],
+							"faces": {
+							}
+						}
+					]
+				},
+				{
+					"name": "UpperFootL",
+					"from": [ 0.4, -6.0, 3.0 ],
+					"to": [ 4.6, 3.0, 6.2 ],
+					"rotationOrigin": [ 1.5, 0.5, 4.6 ],
+					"rotationX": -3.0,
+					"rotationZ": -5.0,
+					"faces": {
+					},
+					"children": [
+						{
+							"name": "LowerFootL",
+							"from": [ 0.1, -9.0, 0.1 ],
+							"to": [ 4.1, 1.0, 3.1 ],
+							"rotationOrigin": [ 2.1, 0.5, 1.4 ],
+							"rotationX": 2.0,
+							"rotationZ": 2.0,
+							"faces": {
+							}
+						},
+						{
+							"name": "FootAttachmentL",
+							"from": [ 2.0, 5.0, 3.2 ],
+							"to": [ 2.0, 5.0, 3.2 ],
+							"rotationOrigin": [ 2.0, 5.0, 3.2 ],
+							"faces": {
+							}
+						}
+					]
+				},
+				{
+					"name": "UpperFootR",
+					"from": [ 0.4, -6.0, -0.2 ],
+					"to": [ 4.6, 3.0, 3.0 ],
+					"rotationOrigin": [ 1.5, 0.5, 1.4 ],
+					"rotationX": 3.0,
+					"rotationZ": -5.0,
+					"faces": {
+					},
+					"children": [
+						{
+							"name": "LowerFootR",
+							"from": [ 0.1, -9.0, 0.1 ],
+							"to": [ 4.1, 1.0, 3.1 ],
+							"rotationOrigin": [ 2.1, 0.5, 1.4 ],
+							"rotationX": -2.0,
+							"rotationZ": 2.0,
+							"faces": {
+							}
+						},
+						{
+							"name": "FootAttachmentR",
+							"from": [ 2.0, 5.0, -0.2 ],
+							"to": [ 2.0, 5.0, -0.2 ],
+							"rotationOrigin": [ 2.0, 5.0, -0.2 ],
+							"faces": {
+							}
+						}
+					]
+				},
+				{
+					"name": "LowerBackAttachment",
+					"from": [ 5.4, 1.4, 3.0 ],
+					"to": [ 5.4, 1.4, 3.0 ],
+					"rotationOrigin": [ 5.4, 1.4, 3.0 ],
+					"faces": {
+					}
+				}
+			]
+		}
+	]
+}
